@@ -1,0 +1,154 @@
+.Footer {
+  //color: white;
+  margin-top: 150px;
+  padding: 150px 100px 75px;
+  position: relative;
+  z-index: 9998;
+
+  &:before {
+    background: white;
+    content: '';
+    display: block;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 80%;
+    z-index: 15;
+  }
+
+  a {
+    color: white;
+    opacity: .5;
+    text-transform: uppercase;
+    transition: .25s ease;
+
+    &:hover, &:focus {
+      opacity: 1;
+    }
+
+    &.Link {
+      font-weight: 800;
+      opacity: 1;
+    }
+  }
+
+  &Branding {
+    background: black;
+    padding: 0 8em;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    z-index: 15;
+
+    @media only screen and (max-width: 567px) {
+      background: none;
+    }
+  }
+
+  .Logo {
+    max-width: 40px;
+    margin: 0;
+
+    @media only screen and (max-width: 567px) {
+      max-width: 40px;
+    }
+  }
+
+  h5 {
+    margin: 0;
+    padding: 15px 0 0;
+  }
+
+  &Wrapper {
+    text-align: center;
+    position: relative;
+    z-index: 15;
+  }
+
+  &Menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: flex-start;
+    justify-items: center;
+
+    &.Desktop {
+      display: grid;
+    }
+
+    &.Mobile {
+      display: none;
+    }
+
+    @media only screen and (max-width: 567px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+      grid-gap: 50px;
+
+      &.Desktop {
+        display: none;
+      }
+
+      &.Mobile {
+        display: grid;
+      }
+    }
+  }
+
+  &MenuSocial {
+    display: grid;
+    font-weight: 400;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    justify-items: center;
+    //text-transform: lowercase;
+    width: 100%;
+    div {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto;
+      justify-items: center;
+      width: 60%;
+    }
+
+    span {
+      padding-top: 45px;
+      position: relative;
+      &:before {
+        background: white;
+        content: '';
+        display: block;
+        opacity: .5;
+        position: relative;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 35px;
+      }
+    }
+  }
+
+  .Copyright {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 100px;
+  }
+
+  .parallax-inner {
+    height: auto;
+  }
+  
+  @media only screen and (max-width: 567px) {
+    padding: 150px 50px 75px;
+    &:before {
+      display: none;
+    }
+  }
+}

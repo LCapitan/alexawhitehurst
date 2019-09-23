@@ -1,0 +1,311 @@
+.Nav {
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  grid-template-rows: 1fr;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  transition: .5s ease-in;
+  transition-delay: .55s;
+
+  @media only screen and (max-width: 567px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  h2 {
+    //position: absolute;
+    //top: 125px;
+    font-size: 16px;
+    //left: 100px;
+    font-weight: 400;
+    opacity: .5;
+    margin-bottom: 100px;
+  }
+
+  &Img {
+    position: relative;
+    figure {
+      background: url('../../ui/img/img-nav.jpg') top center no-repeat;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      bottom: -120%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: .25s ease-in;
+    }
+
+    @media only screen and (max-width: 567px) {
+      figure {
+        display: none;
+      }
+    }
+  }
+
+  &Wrapper {
+    position: relative;
+
+    @media only screen and (max-width: 567px) {
+      height: 100vh;
+    }
+  }
+
+  &Main {
+    align-self: center;
+    margin: 0 0 175px;
+    padding: 0;
+    padding-left: 100px;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    //text-align: right;
+    width: auto;
+    transition: .5s ease-in;
+
+    @media only screen and (max-width: 567px) {
+      padding-right: 0;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0 0 0 45px;
+      list-style-type: none;
+      &:hover {
+        li {
+          a {
+            color: darken(white, 85%);
+          }
+        }
+      }
+
+      li {
+        line-height: 1;
+        margin: 15px 0;
+        position: relative;
+        transition: .25s ease;
+
+        a {
+          //color: darken(white, 20%);
+          color: white;
+          font-size: 40px;
+          font-weight: 800;
+          letter-spacing: 1px;
+          padding-left: 0;
+          position: relative;
+          text-decoration: none;
+          text-transform: uppercase;
+          transition: .25s ease;
+
+          @media only screen and (max-width: 567px) {
+            padding-right: 35px;
+          }
+
+          &:after {
+            display: none;
+          }
+
+          &:before {
+            background: none;
+            color: white;
+            display: block;
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            font-style: italic;
+            font-weight: 400;
+            letter-spacing: 1px;
+            line-height: 1;
+            opacity: 0;
+            position: absolute;
+            left: -45px;
+            top: 40%;
+            transform: translateY(-50%);
+            transition: .25s ease;
+            z-index: 9999;
+          }
+
+          &:hover {
+            color: white;
+            letter-spacing: 10px;
+            padding-left: 50px;
+
+            &:before {
+              letter-spacing: 1px;
+              opacity: .5;
+              left: -55px;
+            }
+          }
+        }
+
+        &:first-child {
+          a {
+            &:before {
+              content: '01';
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          a {
+            &:before {
+              content: '02';
+            }
+          }
+        }
+
+        &:nth-child(3) {
+          a {
+            &:before {
+              content: '03';
+            }
+          }
+        }
+
+        &:nth-child(4) {
+          a {
+            &:before {
+              content: '04';
+            }
+          }
+        }
+
+        &:nth-child(5) {
+          a {
+            &:before {
+              content: '05';
+            }
+          }
+        }
+
+        &:nth-child(6) {
+          a {
+            &:before {
+              content: '06';
+            }
+          }
+        }
+
+        &:nth-child(7) {
+          a {
+            &:before {
+              content: '07';
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ContactIcon {
+    position: fixed;
+    bottom: 60px;
+    left: -150px;
+    a {
+      opacity: .5;
+      &:before {
+        background: transparent;
+        border-top: 0;
+        border-right: 5px solid white;
+        border-bottom: 5px solid white;
+        border-left: 0;
+        content: '';
+        display: block;
+        opacity: 1;
+        width: 34px;
+        height: 34px;
+        transform: rotate(45deg);
+        position: absolute;
+        top: -15px;
+        left: 8px;
+      }
+
+      &:after {
+        background: transparent;
+        border: 5px solid white;
+        content: '';
+        display: block;
+        opacity: 1;
+        width: 45px;
+        height: 30px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+    &.MenuIsOpen {
+      left: 30px;
+      opacity: 1;
+      transition: .5s ease-in;
+      a {
+        &:hover, &:focus {
+          opacity: 1;
+
+          &:before {
+            background: transparent;
+            border-top: 0;
+            border-right: 5px solid white;
+            border-bottom: 5px solid white;
+            border-left: 0;
+            content: '';
+            display: block;
+            opacity: 1;
+            width: 34px;
+            height: 34px;
+            transform: rotate(45deg);
+            position: absolute;
+            top: -15px;
+            right: 8px;
+            left: auto;
+          }
+
+          &:after {
+            opacity: 1;
+            right: 0;
+            left: auto;
+          }
+        }
+      }
+    }
+  }
+
+  &SubMenu {
+    position: relative;
+    ul {
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      li {
+        a {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  &.MenuIsOpen {
+    background-color: black;
+    transition: background-color .5s ease-out;
+    z-index: 9999;
+
+    .NavImg {
+      figure {
+        bottom: 0;
+        transition: .5s ease-out;
+      }
+    }
+
+    .NavMain {
+      top: 150px;
+      transition: .5s ease-out;
+    }
+  }
+}

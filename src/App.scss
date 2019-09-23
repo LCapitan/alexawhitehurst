@@ -1,0 +1,257 @@
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,800|Playfair+Display:700|Red+Hat+Display:300,400,700,900&display=swap');
+
+// font-family: 'Nanum Gothic', sans-serif;
+// font-family: 'Red Hat Display', sans-serif;
+// font-family: 'Playfair Display', serif;
+
+html {
+  background: #000;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+body {
+  color: darken(white, 15%);
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: .01em;
+  line-height: 1.75;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.App {
+  height: auto;
+  position: relative;
+  overflow: hidden;
+
+  &.MenuIsOpen {
+    overflow: hidden;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+h1 {
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: .35em;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: .35em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+h5 {
+   color: white;
+   font-family: 'Nanum Gothic', sans-serif;
+   font-size: 1.15rem;
+   font-weight: 800;
+   letter-spacing: .35em;
+   margin-bottom: 15px;
+   text-transform: uppercase;
+ }
+
+//.ContentWrapper {
+//  display: grid;
+//  grid-template-columns: 1fr;
+//  grid-template-rows: auto;
+//}
+
+
+// Buttons
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+
+  &:hover, &:focus {
+    cursor: pointer;
+    outline: none;
+  }
+}
+
+.Button {
+  background: none;
+  color: white;
+  display: inline-block;
+  font-family: 'helvetica', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  margin-top: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 20px 50px 20px 25px;
+  position: relative;
+  transition: .25s ease;
+
+  &:before {
+    background: white;
+    display: block;
+    content: '';
+    opacity: 1;
+    position: absolute;
+    top: 13px;
+    right: 0;
+    transform: rotate(-45deg);
+    width: 5px;
+    height: 25px;
+    transition: .25s ease;
+  }
+
+  &:after {
+    background: white;
+    display: block;
+    content: '';
+    opacity: 1;
+    position: absolute;
+    top: 28px;
+    right: 0;
+    transform: rotate(45deg);
+    width: 5px;
+    height: 25px;
+    transition: .25s ease;
+  }
+
+  &:hover, &:focus {
+    padding: 20px 50px 20px 35px;
+    opacity: 1;
+    transition: .25s ease;
+
+    &:before, &:after {
+      right: -15px;
+      transition: .25s ease;
+    }
+  }
+}
+
+.Link {
+  color: white;
+  position: relative;
+  text-decoration: none;
+  transition: .25s ease;
+  z-index: 1;
+
+  &:after {
+    background: white;
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    width: 10%;
+    height: 2px;
+    transition: .25s ease;
+    z-index: -1;
+  }
+
+  &:hover, &:focus {
+
+    &:after {
+      width: calc(100% + 4px);
+    }
+  }
+}
+
+.SuperGraphic {
+  padding-top: 250px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: .06;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+  z-index: 9997;
+
+  .Logo {
+    fill: #fff;
+    position: relative;
+    top: 107px;
+    left: -460px;
+    width: 825px;
+    max-width: 825px;
+
+    @media only screen and (max-width: 567px) {
+      left: -262px;
+      width: 525px;
+      max-width: 525px;
+    }
+  }
+}
+
+.TwoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+section {
+  height: auto;
+  margin: 75px 0;
+  min-height: 100vh;
+  max-height: none;
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 4fr 5fr;
+  grid-template-rows: auto;
+  align-items: center;
+}
+
+.Raised {
+  position: relative;
+  z-index: 9998;
+}
+
+.DevLogo {
+  position: absolute;
+  bottom: 25px;
+  right: 35px;
+  opacity: .15;
+  z-index: 9998;
+  transition: .25s ease;
+
+  &:hover, &:focus {
+    opacity: 1;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

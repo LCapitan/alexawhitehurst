@@ -1,0 +1,234 @@
+.Tier {
+  position: relative;
+
+  &:after {
+    background: white;
+    content: '';
+    display: block;
+    opacity: .5;
+    position: absolute;
+    top: 700px;
+    right: 500px;
+    width: 2px;
+    height: calc(100% - 750px);
+    z-index: -1;
+  }
+
+  &.Collections {
+
+    &:after {
+      background: white;
+      content: '';
+      display: block;
+      opacity: .5;
+      position: absolute;
+      top: 700px;
+      right: 500px;
+      width: 2px;
+      height: 350px;
+      z-index: -1;
+    }
+  }
+}
+
+.TierSections {
+  section{
+    height: auto;
+    min-height: 100vh;
+    max-height: none;
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    grid-template-rows: auto;
+    align-items: center;
+  }
+
+  &Content {
+    background: black;
+    padding: 75px;
+    position: relative;
+    left: -200px;
+  }
+}
+
+.TierSectionTwoCol {
+  &Img {
+    display: grid;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    figure {
+      background-size: cover;
+      margin: 0 auto;
+      padding: 0;
+      width: 75%;
+      height: 85vh;
+    }
+  }
+
+  &.Flip {
+    grid-template-columns: 5fr 4fr !important;
+    grid-template-rows: 1fr;
+
+    .TierSectionTwoColImg {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    .TierSectionsContent {
+      grid-column: 1;
+      grid-row: 1;
+      right: -200px;
+      left: auto;
+    }
+  }
+
+  .EarlyLife {
+    background: url('../../ui/img/img-about-early-life.jpg') center center no-repeat;
+    background-size: cover;
+  }
+
+  .CollegeLife {
+    background: url('../../ui/img/img-about-college.jpg') center center no-repeat;
+    background-size: cover;
+  }
+
+  .NYC {
+    background: url('../../ui/img/img-about-saks.jpg') center center no-repeat;
+    background-size: cover;
+  }
+
+  .Inspiration {
+    background: url('../../ui/img/img-about-chuck.jpg') center center no-repeat;
+    background-size: cover;
+  }
+
+  .WhereNow {
+    background: url('../../ui/img/img-about-fl.jpg') center center no-repeat;
+    background-size: cover;
+  }
+
+  //.ContactImg {
+  //  background: url('../../ui/img/img-contact-form.jpg') center center no-repeat;
+  //  background-size: cover;
+  //}
+
+  .ContactImg {
+    height: 100vh;
+    video {
+      filter: grayscale(1);
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.TierHero {
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 9998;
+
+  &Content {
+    color: white;
+    display: grid;
+    font-size: 1.2em;
+    justify-content: flex-start;
+    padding: 0 0 0 150px;
+    max-width: 450px;
+    z-index: 9998;
+  }
+
+  figure {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+}
+
+.CenterContent {
+  display: grid;
+  grid-template-columns: 1fr !important;
+  align-items: center;
+  justify-items: center;
+  &Wrapper {
+    background: black;
+    padding: 75px;
+    max-width: 750px;
+    z-index: 2;
+  }
+
+  &.TwoCol {
+    .CenterContentWrapper {
+      display: block;
+      max-width: none;
+      padding: 100px;
+    }
+
+    .TwoColContent {
+      display: grid;
+      grid-template-columns: 1fr 1fr !important;
+      grid-template-rows: 1fr;
+      max-width: none !important;
+      div {
+        padding: 0 50px 0 0;
+      }
+    }
+  }
+
+  .ImgBg {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+
+    .Runway {
+      background: url('../../ui/img/img-about-runway.jpg') center center no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      z-index: -1;
+    }
+
+    .Graduation {
+      background: url('../../ui/img/img-linens.jpg') center center no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      z-index: -1;
+    }
+  }
+}
+
+.AboutHero {
+  background: url('../../ui/img/img-about-hero.jpg') center center no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.TechpacksHero {
+  background: url('../../ui/img/img-hero-techpacks.jpg') center center no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.QuoteAuthor {
+  justify-self: flex-end;
+}
