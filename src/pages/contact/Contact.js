@@ -9,6 +9,11 @@ import VideoWebM from '../../ui/vid/IMG_3012.webm';
 import VideoOgv from '../../ui/vid/IMG_3012.ogv';
 
 class Contact extends Component {
+
+    componentDidMount() {
+        window.scrollTo(0,0);
+    }
+
     render() {
         return (
             <Route>

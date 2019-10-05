@@ -12,7 +12,7 @@
   .HomeBtn{
     transform: rotate(45deg);
     opacity: .5;
-    transition: .5s ease;
+    transition: .25s ease;
     &:after {
       display: none;
     }
@@ -72,8 +72,8 @@
       position: relative;
       top: 0;
       left: 0;
-      width: 30px;
-      height: 5px;
+      width: 25px;
+      height: 4px;
       transition: .5s ease;
       transform: rotate(0deg);
 
@@ -82,10 +82,10 @@
         content: '';
         display: block;
         position: absolute;
-        top: -10px;
+        top: -9px;
         transform: rotate(0deg);
-        width: 40px;
-        height: 5px;
+        width: 30px;
+        height: 4px;
         transition: .5s ease;
       }
 
@@ -94,11 +94,12 @@
         content: '';
         display: block;
         position: absolute;
-        top: 10px;
+        top: 9px;
         transform: rotate(0deg);
-        width: 30px;
-        height: 5px;
+        width: 25px;
+        height: 4px;
         transition: .5s ease;
+        transition-delay: .05s;
       }
     }
 
@@ -107,10 +108,10 @@
       display: block;
       opacity: .5;
       position: relative;
-      top: 0;
+      top: 5px;
       left: 0;
       width: 30px;
-      height: 5px;
+      height: 4px;
       transition: .5s ease;
       transform: rotate(90deg);
 
@@ -122,8 +123,8 @@
         top: 0;
         left: -10px;
         transform: rotate(135deg);
-        width: 40px;
-        height: 5px;
+        width: 35px;
+        height: 4px;
         transition: .5s ease;
       }
 
@@ -135,12 +136,11 @@
         top: 0;
         left: -10px;
         transform: rotate(-135deg);
-        width: 40px;
-        height: 5px;
+        width: 35px;
+        height: 4px;
         transition: .5s ease;
       }
     }
-
 
     &.MenuIsOpen {
       .OpenMenu {
@@ -154,12 +154,13 @@
       }
 
       .OpenMenu {
-        width: 40px;
-        transition: .5s ease;
+        width: 30px;
+        transition: .25s ease;
 
         &:after {
-          width: 40px;
-          transition: .5s ease;
+          width: 30px;
+          transition: .25s ease;
+          transition-delay: .05s;
         }
       }
     }

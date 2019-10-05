@@ -7,6 +7,10 @@ import { withController } from 'react-scroll-parallax';
 
 class Collections extends Component {
 
+    componentDidMount() {
+        window.scrollTo(0,0);
+    }
+
     handleLoad = () => {
         // updates cached values after image dimensions have loaded
         this.props.parallaxController.update();

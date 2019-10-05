@@ -5,6 +5,10 @@ import Logo from '../../components/logo/Logo';
 import { Parallax } from 'react-scroll-parallax';
 
 class Home extends Component {
+    componentDidMount() {
+        window.scrollTo(0,0);
+    }
+
     render() {
         return (
             <Route>

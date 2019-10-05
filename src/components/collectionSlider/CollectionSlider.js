@@ -30,10 +30,10 @@ class CollectionSlider extends Component {
     }
 
     render() {
-        var settings = {
+        const settings = {
             dots: true,
             fade: true,
-            infinite: false,
+            infinite: true,
             speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1
@@ -41,43 +41,45 @@ class CollectionSlider extends Component {
 
         return (
             <div className="SliderContainer">
-                <div className="ContentSlider">
-                    <Slider {...settings}
-                            asNavFor={this.state.nav2}
-                            ref={slider => (this.slider1 = slider)}
-                            fade={true}>
-                        <div>
-                            <div className="">
+                <div className="ContentSliderWrapper">
+                    <div className="ContentSlider">
+                        <Slider {...settings}
+                                asNavFor={this.state.nav2}
+                                ref={slider => (this.slider1 = slider)}
+                                fade={true}>
+                            <div>
                                 <div className="">
-                                    <h2>#AEW-S16-001</h2>
-                                    <div>
-                                        This silk shantung fabric is woven vertically in navy fibers and cross woven horizontally with orange fibers creating an iridescent affect.
-                                        <Link to="/collections/buckle-up" className="Button">View Collection</Link>
+                                    <div className="">
+                                        <h2>#AEW-S16-001</h2>
+                                        <div>
+                                            This silk shantung fabric is woven vertically in navy fibers and cross woven horizontally with orange fibers creating an iridescent affect.
+                                            <Link to="/buckle-up" className="Button">View Collection</Link>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div>
-                            <div className="">
+                            <div>
                                 <div className="">
-                                    <h2>#AEW-S16-002</h2>
-                                    <div>
-                                        This olive leather corset consist of 5 layers of fabric.
+                                    <div className="">
+                                        <h2>#AEW-S16-002</h2>
+                                        <div>
+                                            This olive leather corset consist of 5 layers of fabric.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div>
-                            <div className="">
+                            <div>
                                 <div className="">
-                                    <h2>#BUCKLEUP</h2>
-                                    <div>
-                                        "Buckle Up" was inspired my my stepfather Chuck, who passed away right before the process of my collection began. I nicknamed him Chuckles and called him Buckles. His bold authoritative charisma and soft hearted soul inspired me to build a collection that was a mix of sharp pointed studs, romantic embroideries of cobalt blue flowers.
+                                    <div className="">
+                                        <h2>#BUCKLEUP</h2>
+                                        <div>
+                                            "Buckle Up" was inspired my my stepfather Chuck, who passed away right before the process of my collection began. I nicknamed him Chuckles and called him Buckles. His bold authoritative charisma and soft hearted soul inspired me to build a collection that was a mix of sharp pointed studs, romantic embroideries of cobalt blue flowers.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </Slider>
+                        </Slider>
+                    </div>
                 </div>
 
                 <Slider {...settings}

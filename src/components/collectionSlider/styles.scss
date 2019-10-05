@@ -3,14 +3,14 @@
   height: 100vh;
 }
 
-.ContentSlider {
+.ContentSliderWrapper {
   background: black;
-  padding: 75px 100px 175px;
+  padding: 75px 75px 120px 95px;
   position: absolute;
   top: 50%;
   left: 45%;
   transform: translateY(-50%);
-  width: 25vw;
+  width: 30vw;
   height: auto;
   z-index: 25;
 
@@ -18,10 +18,15 @@
     letter-spacing: 1px;
   }
 
+  .Button {
+    position: relative;
+    z-index: 9999;
+  }
+
   .slick-prev {
     top: auto;
-    bottom: -90px;
-    left: 25px;
+    bottom: -120px;
+    left: -75px;
     width: 45px;
     height: 45px;
     opacity: .5;
@@ -32,9 +37,10 @@
       content: '';
       opacity: 1;
       position: relative;
-      top: 10px;
-      width: 5px;
-      height: 25px;
+      top: 55%;
+      left: 50%;
+      width: 4px;
+      height: 20px;
       transform: rotate(45deg);
     }
 
@@ -43,8 +49,11 @@
       display: block;
       content: '';
       opacity: 1;
-      width: 5px;
-      height: 25px;
+      position: relative;
+      left: 50%;
+      bottom: 8px;
+      width: 4px;
+      height: 20px;
       transform: rotate(-45deg);
     }
 
@@ -52,10 +61,11 @@
       opacity: 1;
     }
   }
+
   .slick-next {
     top: auto;
-    bottom: -90px;
-    right: 0;
+    bottom: -50px;
+    left: -70px;
     width: 45px;
     height: 45px;
     opacity: .5;
@@ -66,9 +76,10 @@
       content: '';
       opacity: 1;
       position: relative;
-      top: 10px;
-      width: 5px;
-      height: 25px;
+      top: 55%;
+      left: 50%;
+      width: 4px;
+      height: 20px;
       transform: rotate(-45deg);
     }
 
@@ -77,8 +88,11 @@
       display: block;
       content: '';
       opacity: 1;
-      width: 5px;
-      height: 25px;
+      position: relative;
+      left: 50%;
+      bottom: 8px;
+      width: 4px;
+      height: 20px;
       transform: rotate(45deg);
     }
 

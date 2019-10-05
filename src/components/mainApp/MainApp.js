@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Logo from '../../components/logo/Logo';
 import AMLogo from '../../components/logo/AMLogo';
+import { Parallax } from "react-scroll-parallax";
 
 //components
 import Header from '../header/Header';
@@ -14,9 +15,8 @@ import Home from '../../pages/home/Home';
 import About from '../../pages/about/About';
 import Collections from '../../pages/collections/Collections';
 import Contact from '../../pages/contact/Contact';
-import { Parallax } from "react-scroll-parallax";
 import Techpacks from "../../pages/techpacks/Techpacks";
-import BuckleUp from "../../pages/collections/BuckleUp";
+import BuckleUp from "../../pages/buckleUp/BuckleUp";
 
 class MainApp extends Component {
 
@@ -39,7 +39,7 @@ class MainApp extends Component {
                             <Switch>
                                 <Route path="/bio" component={About}/>
                                 <Route path="/collections" component={Collections}/>
-                                <Route path="/collections/buckle-up" component={BuckleUp}/>
+                                <Route path="/buckle-up" component={BuckleUp}/>
                                 <Route path="/techpacks" component={Techpacks}/>
                                 <Route path="/contact" component={Contact}/>
                                 <Route exact path="/" component={Home}/>

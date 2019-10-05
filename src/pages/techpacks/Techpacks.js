@@ -3,6 +3,11 @@ import './styles.scss';
 import {Parallax} from "react-scroll-parallax";
 
 class Techpacks extends Component {
+
+    componentDidMount() {
+        window.scrollTo(0,0);
+    }
+
     render() {
         return (
             <div className="Tier">

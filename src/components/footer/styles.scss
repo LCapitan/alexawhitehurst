@@ -12,10 +12,22 @@
     opacity: .5;
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 120px;
     height: 2px;
-    width: 80%;
+    width: 20%;
+    z-index: 15;
+  }
+
+  &:after {
+    background: white;
+    content: '';
+    display: block;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    right: 120px;
+    height: 2px;
+    width: 20%;
     z-index: 15;
   }
 
@@ -36,7 +48,6 @@
   }
 
   &Branding {
-    background: black;
     padding: 0 8em;
     position: absolute;
     top: 0;
@@ -51,8 +62,10 @@
   }
 
   .Logo {
+    fill: #ffffff;
     max-width: 40px;
     margin: 0;
+    //animation: color-rotate 15s infinite;
 
     @media only screen and (max-width: 567px) {
       max-width: 40px;
@@ -150,5 +163,29 @@
     &:before {
       display: none;
     }
+  }
+}
+
+//@keyframes glow {
+//  0% {filter: hue-rotate(0)}
+//  50% {filter: hue-rotate(360deg)}
+//  100% {filter: hue-rotate(0)}
+//}
+
+@keyframes color-rotate {
+  0% {
+    fill: #3A15AF;
+  }
+  25% {
+    fill: #FFD403;
+  }
+  50% {
+    fill: #9FEE00;
+  }
+  75% {
+    fill: #CE0275;
+  }
+  100% {
+    fill: #3A15AF;
   }
 }

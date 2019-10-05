@@ -4,6 +4,11 @@ import './styles.scss'
 import {Parallax} from "react-scroll-parallax";
 
 class About extends Component {
+
+    componentDidMount() {
+        window.scrollTo(0,0);
+    }
+
     render() {
         return (
             <Route>

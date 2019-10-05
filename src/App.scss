@@ -37,7 +37,12 @@ a {
   overflow: hidden;
 
   &.MenuIsOpen {
+    height: 100vh;
     overflow: hidden;
+
+    .SuperGraphic {
+      opacity: 0;
+    }
   }
 }
 
@@ -185,7 +190,7 @@ button {
 }
 
 .SuperGraphic {
-  padding-top: 250px;
+  padding-top: 0;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -200,8 +205,8 @@ button {
     position: relative;
     top: 107px;
     left: -460px;
-    width: 825px;
-    max-width: 825px;
+    width: 775px;
+    max-width: 750px;
 
     @media only screen and (max-width: 567px) {
       left: -262px;

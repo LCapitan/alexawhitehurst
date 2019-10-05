@@ -3,6 +3,11 @@ import { Route, Link } from 'react-router-dom';
 import { Parallax } from "react-scroll-parallax";
 
 class BuckleUp extends Component {
+
+    componentDidMount() {
+        window.scrollTo(0,0);
+    }
+
     render() {
         return(
             <Route>
