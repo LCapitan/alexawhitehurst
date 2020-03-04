@@ -78,7 +78,6 @@ export default class Form extends Component {
                 >
 
                     {(props) => {
-
                         const {
                             values,
                             touched,

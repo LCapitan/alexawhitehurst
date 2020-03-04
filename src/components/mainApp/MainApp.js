@@ -17,6 +17,7 @@ import Collections from '../../pages/collections/Collections';
 import Contact from '../../pages/contact/Contact';
 import Techpacks from "../../pages/techpacks/Techpacks";
 import BuckleUp from "../../pages/buckleUp/BuckleUp";
+import EveningWear from "../../pages/eveningWear/EveningWear";
 
 class MainApp extends Component {
 
@@ -40,6 +41,7 @@ class MainApp extends Component {
                                 <Route path="/bio" component={About}/>
                                 <Route path="/collections" component={Collections}/>
                                 <Route path="/buckle-up" component={BuckleUp}/>
+                                <Route path="/evening-wear" component={EveningWear}/>
                                 <Route path="/techpacks" component={Techpacks}/>
                                 <Route path="/contact" component={Contact}/>
                                 <Route exact path="/" component={Home}/>

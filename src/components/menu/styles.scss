@@ -1,3 +1,5 @@
+
+
 .Nav {
   background-color: transparent;
   display: grid;
@@ -291,7 +293,7 @@
   }
 
   &.MenuIsOpen {
-    background-color: black;
+    background-color: #030303;
     transition: background-color .5s ease-out;
     z-index: 9999;
 

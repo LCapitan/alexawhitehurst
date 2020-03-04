@@ -1,0 +1,12 @@
+.DetailSliderContainer {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.LeftSlider, .RightSlider {
+  display: inline-block;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}

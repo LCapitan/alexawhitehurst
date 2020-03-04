@@ -1,3 +1,5 @@
+
+
 .Tier {
   position: relative;
 
@@ -43,7 +45,7 @@
   }
 
   &Content {
-    background: black;
+    background: #030303;
     padding: 75px;
     position: relative;
     left: -200px;
@@ -85,37 +87,12 @@
   }
 
   .EarlyLife {
-    background: url('../../ui/img/img-about-early-life.jpg') center center no-repeat;
+    background: url('../../ui/img/alexa-about.png') center center no-repeat;
     background-size: cover;
   }
-
-  .CollegeLife {
-    background: url('../../ui/img/img-about-college.jpg') center center no-repeat;
-    background-size: cover;
-  }
-
-  .NYC {
-    background: url('../../ui/img/img-about-saks.jpg') center center no-repeat;
-    background-size: cover;
-  }
-
-  .Inspiration {
-    background: url('../../ui/img/img-about-chuck.jpg') center center no-repeat;
-    background-size: cover;
-  }
-
-  .WhereNow {
-    background: url('../../ui/img/img-about-fl.jpg') center center no-repeat;
-    background-size: cover;
-  }
-
-  //.ContactImg {
-  //  background: url('../../ui/img/img-contact-form.jpg') center center no-repeat;
-  //  background-size: cover;
-  //}
 
   .ContactImg {
-    height: 100vh;
+    height: 90vh;
     video {
       filter: grayscale(1);
       position: relative;
@@ -142,7 +119,7 @@
     display: grid;
     font-size: 1.2em;
     justify-content: flex-start;
-    padding: 0 0 0 150px;
+    padding: 0 0 0 75px;
     max-width: 450px;
     z-index: 9998;
   }
@@ -160,7 +137,7 @@
   align-items: center;
   justify-items: center;
   &Wrapper {
-    background: black;
+    background: #030303;
     padding: 75px;
     max-width: 750px;
     z-index: 2;

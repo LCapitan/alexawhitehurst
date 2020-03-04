@@ -10,7 +10,6 @@ import { withController } from "react-scroll-parallax/cjs";
 class CollectionSlider extends Component {
 
     handleLoad = () => {
-        // updates cached values after image dimensions have loaded
         this.props.parallaxController.update();
     };
 
@@ -49,11 +48,18 @@ class CollectionSlider extends Component {
                                 fade={true}>
                             <div>
                                 <div className="">
+                                    <h2>Buckle Up <Link to="/buckle-up" className="Button">View</Link></h2>
+                                    <div>
+                                        "Buckle Up" was inspired my my stepfather Chuck, who passed away right before the process of my collection began. I nicknamed him Chuckles and called him Buckles. His bold authoritative charisma and soft hearted soul inspired me to build a collection that was a mix of sharp pointed studs, romantic embroideries of cobalt blue flowers.
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div className="">
                                     <div className="">
-                                        <h2>#AEW-S16-001</h2>
+                                        <h2>Evening Wear <Link to="/evening-wear" className="Button">View</Link></h2>
                                         <div>
                                             This silk shantung fabric is woven vertically in navy fibers and cross woven horizontally with orange fibers creating an iridescent affect.
-                                            <Link to="/buckle-up" className="Button">View Collection</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -61,19 +67,9 @@ class CollectionSlider extends Component {
                             <div>
                                 <div className="">
                                     <div className="">
-                                        <h2>#AEW-S16-002</h2>
+                                        <h2>Cocktail Dress <Link to="/buckle-up" className="Button">View</Link></h2>
                                         <div>
                                             This olive leather corset consist of 5 layers of fabric.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="">
-                                    <div className="">
-                                        <h2>#BUCKLEUP</h2>
-                                        <div>
-                                            "Buckle Up" was inspired my my stepfather Chuck, who passed away right before the process of my collection began. I nicknamed him Chuckles and called him Buckles. His bold authoritative charisma and soft hearted soul inspired me to build a collection that was a mix of sharp pointed studs, romantic embroideries of cobalt blue flowers.
                                         </div>
                                     </div>
                                 </div>

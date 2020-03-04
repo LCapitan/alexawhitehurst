@@ -31,7 +31,7 @@ class Collections extends Component {
                         <Parallax className="ParallaxWrapper" y={[-30, 50]} tagOuter="div" onLoad={this.handleLoad}>
                             <div className="TierHeroContent">
                                 <h1>Collections</h1>
-                                <p>View my collections below</p>
+                                <p>View collections below</p>
                             </div>
                         </Parallax>
                     </section>

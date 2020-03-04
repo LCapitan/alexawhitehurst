@@ -1,3 +1,5 @@
+
+
 .CollectionsHero {
   background: url('../../ui/img/img-hero-collections.jpg') center center no-repeat;
   background-size: cover;
@@ -8,7 +10,25 @@
 }
 
 .BuckleUpHero {
-  background: url('../../ui/img/img-collection-a1.jpg') center center no-repeat;
+  background: url('../../ui/img/img-collection-a1.jpg') top center no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.BuckleUpMain {
+  background: url('../../ui/img/img-buckle-up-main.jpg') top center no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.EveningWearHero {
+  background: url('../../ui/img/img-collection-eve.jpg') center center no-repeat;
   background-size: cover;
   margin: 0;
   padding: 0;

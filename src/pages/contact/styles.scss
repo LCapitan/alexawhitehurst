@@ -1,3 +1,5 @@
+
+
 .ContactHero {
   background: url('../../ui/img/img-contact.jpg') center center no-repeat;
   background-size: cover;
@@ -88,6 +90,6 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active  {
-  -webkit-box-shadow: 0 0 0 30px black inset !important;
+  -webkit-box-shadow: 0 0 0 30px #030303 inset !important;
   -webkit-text-fill-color: rgb(255,255,255) !important;
 }

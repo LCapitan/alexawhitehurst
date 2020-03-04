@@ -26,19 +26,19 @@ class Home extends Component {
                     </Parallax>
                 </section>
 
-                <section className="Branding">
-                    <figure></figure>
-
-                    <div className="BrandingContent">
-                        <Parallax className="ParallaxWrapper" y={[20, -20]} tagOuter="div">
-                            <div className="BrandingContentContainer">
-                                <h2>Behind<br/>the Brand</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-                                <Link to="/bio" className="Button">About Alexa</Link>
-                            </div>
-                        </Parallax>
+                <section className="Branding CenterContent">
+                    <div className="ImgBg">
+                        <figure></figure>
                     </div>
+
+                    <Parallax className="ParallaxWrapper" y={[30, -20]} tagOuter="span">
+                        <div className="CenterContentWrapper">
+                            <h2>Behind the Brand</h2>
+                            <p>Walking in Whitehurst provides a couture atelier experience with captivating designs inspired to empower women. With the use of fine fabrics, sophisticated silhouettes, and a figure-friendly fit, each garment is produced from start to finish by Alexa Whitehurst.</p>
+
+                            <Link to="/bio" className="Button">About Alexa</Link>
+                        </div>
+                    </Parallax>
                 </section>
             </Route>
         );
